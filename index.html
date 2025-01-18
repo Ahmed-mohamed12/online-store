@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topoco</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.css" />
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="owlcarosel-rakwan/css/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarosel-rakwan/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarosel-rakwan/css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .owl-carousel .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            padding: 10px;
+        }
+
+        .owl-carousel img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container top-nav">
+            <a href="index.html" class="logo"><img src="img/logo-black.png" alt="logo" /></a>
+            <form action="" class="search">
+                <input type="search" placeholder="Search for products..." />
+                <button type="submit">Search</button>
+            </form>
+            <div class="cart-header">
+                <div  class="icon-cart">
+                    <i class="fa-solid fa-bag-shopping" onclick="showCart()"></i>
+                    <span id="count-item" class="count_item">0</span>
+                </div>
+                <div class="total-price">
+                    <p>My cart:</p>
+                    <p class="price_cart_head">$0</p>
+                </div>
+                <div id="cart" class="cart" tyle="width: 200px;background-color: red;position: fixed;height: 100vh;z-index: 999;top: 10px;">
+                    <div class="top-cart">
+                        <h3>my cart <span class="count-item-cart">0Item in cart</span></h3>
+                        <span class="close-cart" onclick="hideCart()"><i class="fa-regular fa-circle-xmark"></i></span>
+                    </div>
+                    <div class="items-in-cart">
+                       
+                        
+                    </div>
+                    <div class="bottom-cart">
+                        <div class="total">
+                            <p>cart subtotal</p>
+                            <p class="price-cart-total">$0</p>
+                        </div>
+                        <div class="button-cart">
+                            <a href="chekout.html" class="btn-cart">proceed to checkout</a>
+                            <a href="allproducts.html" class="btn-cart trans-bg">shop more</a>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <nav>
+            <div class="links container">
+                <i onclick="openmenu()" class="fa-solid fa-bars btn_open_menue" style="display: none;"></i>                
+                <ul id="menu">
+                    <i class="fa-regular fa-circle-xmark btn_close_menue" onclick="closemenu()"></i>
+                   <img class="logo_menu" src="img/logo-black.png" alt="">
+                    <li class="active"><a href="index.html">home</a></li>
+                    <li><a href="allproducts.html">all products</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#contact"> contact</a></li>
+                </ul>
+                <div class="login-signup">
+                    <a href="login.html">login<i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="signup.html">sign up<i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <div class="container">
+            <div class="side-bar">
+                <h2><i class="fa-solid fa-bars"></i>shop by department</h2>
+                <a href="">all categories</a>
+                <a href="">best seller</a>
+                <a href="">New arrival</a>
+                <a href="">top 10 offers</a>
+                <a href="">phones & tablets</a>
+                <a href="">Electronic & digits</a>
+                <a href="">Fashion & clothings</a>
+                <a href="">jewelary & watches</a>
+                <a href="">Tv & Audios</a>
+            </div>
+            <div class="kkk">
+                <div class="owl-carousel top-banner owl-theme">
+                    <div class="item">
+                        <img src="img/banner/banner-1.jpg" class="d-block" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="img/banner/banner-2.jpg" class="d-block" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="img/banner/banner-3.jpg" class="d-block" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------featured----------------- -->
+    <section class="features">
+        <div class="container">
+            <div class="featured-item">
+                <img src="img/features1.png" alt=""/>
+                <div class="text">
+                    <h4>free shipping</h4>
+                    <p>free shipping on all order</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="img/features2.png" alt=""/>
+                <div class="text">
+                    <h4>free shipping</h4>
+                    <p>free shipping on all order</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="img/features3.png" alt=""/>
+                <div class="text">
+                    <h4>free shipping</h4>
+                    <p>free shipping on all order</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="img/features4.png" alt=""/>
+                <div class="text">
+                    <h4>free shipping</h4>
+                    <p>free shipping on all order</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="img/features5.png" alt=""/>
+                <div class="text">
+                    <h4>free shipping</h4>
+                    <p>free shipping on all order</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------banner----------------- -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-img">
+                <div class="glass-hover"></div>
+                <a href="#"></a>
+                <img src="img/banner/banner-1.jpg" alt=""/>
+            </div>
+            <div class="banner-img">
+                <div class="glass-hover"></div>
+                <a href="#"></a>
+                <img src="img/banner/banner-2.jpg" alt=""/>
+            </div>
+            <div class="banner-img">
+                <div class="glass-hover"></div>
+                <a href="#"></a>
+                <img src="img/banner/banner-3.jpg" alt=""/>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------slide sale -->
+    <section class="slide slide-sale slide-one">
+        <div class="container" style="position: relative;">
+            <div class="sale-sec">
+                <div class="top-slide">
+                    <h2>on sale <span>product</span></h2>
+                </div>
+                <div class="products">
+                    
+                    <div id="panner" class="owl-carousel panner  owl-theme">
+                  <!-- cart from projectsArray -->
+          </div>
+          <div class="owl-nav">
+            <button class="owl-prev">‹</button>
+            <button class="owl-next">›</button>
+        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner banner_big">
+        <div class="container">
+            
+            <div class="banner-img">
+                <div class="glass-hover"></div>
+                <a href="#"></a>
+                <img src="img/banner/banner-4.jpg" alt=""/>
+            </div>
+            <div class="banner-img">
+                <div class="glass-hover"></div>
+                <a href="#"></a>
+                <img src="img/banner/banner-5.jpg" alt=""/>
+            </div>
+        </div>
+    </section>
+    <!-- --------------slide two------------------ -->
+   
+    <section class="slide slide-sal slide-two" >
+        <div class="container" style="position: relative;">
+            <div class="top-slide">
+                <h2>computer & desktop <span>products</span></h2>
+            </div>
+            <div class="slide-with-img" style="width:100%;display: flex;">
+                <div class="categ-img" style="width: 200px;">
+                    <a href="#"><img src="img/banner/banner-sm-1.jpg" alt="" style="max-width: 100%"></a>
+                </div>
+                <div class="products" style="flex:1">
+                    <div id="other-products" class="owl-carousel owl-themee ">
+                        <!-- سيتم إضافة المنتجات هنا عبر JavaScript -->
+                    </div>
+                    <div class="owl-nav">
+                        <button class="owl-prev">‹</button>
+                        <button class="owl-next">›</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------- -->
+    <section class="slide slide-sal slide-three" >
+        <div class="container" style="position: relative;">
+            <div class="top-slide">
+                <h2>computer & desktop <span>products</span></h2>
+            </div>
+            <div class="slide-with-img" style="width:100%;display: flex;">
+                <div class="categ-img" style="width: 200px;">
+                    <a href="#"><img src="img/banner/banner-sm-2.jpg" alt="" style="max-width: 100%"></a>
+                </div>
+                <div class="products" style="flex:1">
+                    <div id="third-products" class="owl-carousel owl-themee ">
+                        <!-- سيتم إضافة المنتجات هنا عبر JavaScript -->
+                    </div>
+                    <div class="owl-nav">
+                        <button class="owl-prev">‹</button>
+                        <button class="owl-next">›</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="container">
+            <div class="banner-img">
+                <div class="glass-hover"></div>
+                <a href="#"></a>
+                <img src="img/banner/banner-6.jpg" alt=""/>
+            </div>
+            <div class="banner-img">
+                <div class="glass-hover"></div>
+                <a href="#"></a>
+                <img src="img/banner/banner-7.jpg" alt=""/>
+            </div>
+            <div class="banner-img">
+                <div class="glass-hover"></div>
+                <a href="#"></a>
+                <img src="img/banner/banner-8.jpg" alt=""/>
+            </div>
+        </div>
+    </section>
+    <div class="newsletter" id="contact">
+        <div class="container">
+            <div class="text">
+                <img src="img/icon_email.png" alt="">
+                <div class="content">
+                    <h4>sign up to newsletter</h4>
+                    <p>get email update about our letters shop ...and receive</p>
+                    <h6>$30 copon for first  shopping</h6>
+                </div>
+            </div>
+            <form class="newsletter-form" action="">
+                <input type="email" placeholder="enter your email ..." id="">
+                <button type="submit">subscribe</button>
+            </form>
+        </div>
+    </div>
+            </div>
+        </div>
+    </section> 
+    <footer class="footer">
+        <div class="container">
+
+        <div class="big_row">
+            <img src="img/logo-white.png" alt="">
+            <div class="hotline">
+                <i class="fa-solid fa-headset"></i>
+                <div class="text">
+                    <h5>hotline free 24/24</h5>
+                    <h6>(+100)123 456 789</h6>
+                </div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis architecto perferendis veritatis?</p>
+        </div>
+        <div class="row">
+            <h4>FAQs & Help</h4>
+            <div class="links">
+                <a href="">F.A.Q.'S</a>
+                <a href="">Ordering Tracking</a>
+                <a href="">Contacts</a>
+                <a href="">Events</a>
+                <a href="">Help center</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>FAQs & Help</h4>
+            <div class="links">
+                <a href="">F.A.Q.'S</a>
+                <a href="">Ordering Tracking</a>
+                <a href="">Contacts</a>
+                <a href="">Events</a>
+                <a href="">Help center</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>FAQs & Help</h4>
+            <div class="links">
+                <a href="">F.A.Q.'S</a>
+                <a href="">Ordering Tracking</a>
+                <a href="">Contacts</a>
+                <a href="">Events</a>
+                <a href="">Help center</a>
+            </div>
+        </div>
+
+    </div>
+
+    </footer>
+
+   
+
+    <!-- ----java script------------- -->
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="owlcarosel-rakwan/js/jquery-3.5.1.min.js"></script>
+    <script src="owlcarosel-rakwan/js/owl.carousel.js"></script>
+    <script src="owlcarosel-rakwan/js/owl.carousel.min.js"></script>
+ 
+    <script>
+     $(document).ready(function() {
+    // تهيئة السلايد الأول
+    $('.top-banner').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 3000
+    });
+
+    // تهيئة سلايد المنتجات
+    var carousel = $('.panner').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsive: {
+            0: { items: 2 },
+            600: { items: 2 },
+            1000: { items: 4 },
+            1200: { items: 5 }
+        },
+        dots: false,
+        nav: false,
+        autoplayHoverPause: true,
+    });
+
+    // تهيئة سلايد المنتجات الثاني (slide-two)
+    var carousel_two = $('#other-products').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsive: {
+            0: { items: 2 },
+            600: { items: 2 },
+            1000: { items: 3 },
+            1200: { items: 4 }
+        },
+        dots: false,
+        nav: false,
+        autoplayHoverPause: true,
+        // autoplay: false,
+        // autoplayTimeout: 3000
+    });
+
+    // تهيئة سلايد المنتجات الثالث (slide-three)
+    var carousel_three = $('#third-products').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsive: {
+            0: { items: 2 },
+            600: { items: 2 },
+            1000: { items: 3 },
+            1200: { items: 4 }
+        },
+        dots: false,
+        nav: false,
+        autoplayHoverPause: true,
+        // autoplay: false,
+        // autoplayTimeout: 3000
+    });
+
+    // إضافة أحداث لأزرار التمرير
+    $('.slide-one .owl-prev').click(function() {
+        carousel.trigger('prev.owl.carousel');
+    });
+
+    $('.slide-one .owl-next').click(function() {
+        carousel.trigger('next.owl.carousel');
+    });
+
+    $('.slide-two .owl-prev').click(function() {
+        carousel_two.trigger('prev.owl.carousel');
+    });
+
+    $('.slide-two .owl-next').click(function() {
+        carousel_two.trigger('next.owl.carousel');
+    });
+
+    $('.slide-three .owl-prev').click(function() {
+        carousel_three.trigger('prev.owl.carousel');
+    });
+
+    $('.slide-three .owl-next').click(function() {
+        carousel_three.trigger('next.owl.carousel');
+    });
+}); 
+ 
+    
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="./jsonFile/items.js"></script>
+</body>
+</html>

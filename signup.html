@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topoco</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.css" />
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/login_regs.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container top-nav">
+            <a href="index.html" class="logo"><img src="img/logo-black.png" alt="logo" /></a>
+            <form action="" class="search">
+                <input type="search" placeholder="Search for products..." />
+                <button type="submit">Search</button>
+            </form>
+            <div class="cart-header">
+                <div  class="icon-cart">
+                    <i class="fa-solid fa-bag-shopping" onclick="showCart()"></i>
+                    <span id="count-item" class="count_item">0</span>
+                </div>
+                <div class="total-price">
+                    <p>My cart:</p>
+                    <p class="price_cart_head">$0</p>
+                </div>
+                <div id="cart" class="cart" tyle="width: 200px;background-color: red;position: fixed;height: 100vh;z-index: 999;top: 10px;">
+                    <div class="top-cart">
+                        <h3>my cart <span class="count-item-cart">0Item in cart</span></h3>
+                        <span class="close-cart" onclick="hideCart()"><i class="fa-regular fa-circle-xmark"></i></span>
+                    </div>
+                    <div class="items-in-cart">
+                       
+                        
+                    </div>
+                    <div class="bottom-cart">
+                        <div class="total">
+                            <p>cart subtotal</p>
+                            <p class="price-cart-total">$0</p>
+                        </div>
+                        <div class="button-cart">
+                            <a href="chekout.html" class="btn-cart">proceed to checkout</a>
+                            <a href="allproducts.html" class="btn-cart trans-bg" onclick="hideCart()">shop more</a>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <nav>
+            <div class="links container">
+                <i onclick="openmenu()" class="fa-solid fa-bars btn_open_menue" style="display: none;"></i>                
+                <ul id="menu">
+                    <i class="fa-regular fa-circle-xmark btn_close_menue" onclick="closemenu()"></i>
+                   <img class="logo_menu" src="img/logo-black.png" alt="">
+                    <li class="active"><a href="index.html">home</a></li>
+                    <li><a href="allproducts.html">all products</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#contact"> contact</a></li>
+                </ul>
+                <div class="login-signup">
+                    <a href="login.html">login<i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="signup.html">sign up<i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+   <!-- --------signin------------------ -->
+<section class="signin sec_form">
+    <div class="form_container">
+        <p class="title">welcome back</p>
+        <form action="" class="form">
+            <input type="text" placeholder="name...">
+            <input type="email" placeholder="email...">
+            <input type="password" placeholder="password...">
+            <input type="password" placeholder="password...">
+            
+            
+            <button class="form-btn">Sign up</button>
+        </form>
+        <p class="sign-up-label">
+            have an account? <a href="" class="sign-up-link">Login</a>
+        </p>
+        <div class="buttons-container">
+            <div class="apple-login-button">
+                <i class="fa-brands fa-apple"></i>
+                <span>Signup with apple</span>
+            </div>
+            <div class="google-login-button">
+                <i class="fa-brands fa-google"></i>
+                <span>Signup with google</span>
+            </div>
+        </div>
+    </div>
+</section>
+   
+    <!-- --------------- -->
+    <footer class="footer">
+        <div class="container">
+
+        <div class="big_row">
+            <img src="img/logo-white.png" alt="">
+            <div class="hotline">
+                <i class="fa-solid fa-headset"></i>
+                <div class="text">
+                    <h5>hotline free 24/24</h5>
+                    <h6>(+100)123 456 789</h6>
+                </div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis architecto perferendis veritatis?</p>
+        </div>
+        <div class="row">
+            <h4>FAQs & Help</h4>
+            <div class="links">
+                <a href="">F.A.Q.'S</a>
+                <a href="">Ordering Tracking</a>
+                <a href="">Contacts</a>
+                <a href="">Events</a>
+                <a href="">Help center</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>FAQs & Help</h4>
+            <div class="links">
+                <a href="">F.A.Q.'S</a>
+                <a href="">Ordering Tracking</a>
+                <a href="">Contacts</a>
+                <a href="">Events</a>
+                <a href="">Help center</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>FAQs & Help</h4>
+            <div class="links">
+                <a href="">F.A.Q.'S</a>
+                <a href="">Ordering Tracking</a>
+                <a href="">Contacts</a>
+                <a href="">Events</a>
+                <a href="">Help center</a>
+            </div>
+        </div>
+
+    </div>
+
+    </footer>
+    <!-- ----java script------------- -->
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

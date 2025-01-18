@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <style>
+        #hhh{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="owl-carousel top-banner owl-theme ">
+        <div class="item"><img src="https://www.gardeningknowhow.com/wp-content/uploads/2019/11/red-rose.jpg" alt=""></div>
+        <div class="item"><img src="https://www.gardeningknowhow.com/wp-content/uploads/2019/11/red-rose.jpg" alt=""></div>
+        <div class="item"><img src="https://www.gardeningknowhow.com/wp-content/uploads/2019/11/red-rose.jpg" alt=""></div>
+        <div class="item"><img src="https://www.gardeningknowhow.com/wp-content/uploads/2019/11/red-rose.jpg" alt=""></div>
+    </div>
+
+    <div class="owl-carousel aside-banner owl-theme ">
+        <div class="item"><img src="https://images-na.ssl-images-amazon.com/images/I/41ZjSZ%2BDtWL.jpg" alt=""></div>
+        <div class="item"><img src="https://images-na.ssl-images-amazon.com/images/I/41ZjSZ%2BDtWL.jpg" alt=""></div>
+        <div class="item"><img src="https://images-na.ssl-images-amazon.com/images/I/41ZjSZ%2BDtWL.jpg" alt=""></div>
+        <div class="item"><img src="https://images-na.ssl-images-amazon.com/images/I/41ZjSZ%2BDtWL.jpg" alt=""></div>
+    </div>
+
+    <div class="owl-carousel hh-banner owl-theme ">
+        <div class="item">
+            <h1 id="hhh">learn HTML</h1>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/41ZjSZ%2BDtWL.jpg" alt="">
+        </div>
+        <div class="item">
+            <h1>learn CSS</h1>
+            <p>learn css easy</p>
+        </div>
+        <div class="item"><h1>learn JS</h1></div>
+        <div class="item"><h1>learn JQ</h1></div>
+    </div>
+
+    <div class="owl-carousel vid-banner owl-theme ">
+        <div class="item"><iframe width="560" height="315" src="https://www.youtube.com/embed/A9unZqLrm6I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="item"><iframe width="560" height="315" src="https://www.youtube.com/embed/A9unZqLrm6I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="item"><iframe width="560" height="315" src="https://www.youtube.com/embed/A9unZqLrm6I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="item"><iframe width="560" height="315" src="https://www.youtube.com/embed/A9unZqLrm6I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function(){
+            $('.top-banner').owlCarousel({
+                items:3,
+                margin:10,
+                nav:true,
+                autoplay:true,
+                loop:true
+            })
+            $('.aside-banner').owlCarousel({
+                items:4,
+                margin:10,
+                nav:true,
+            })
+            $('.hh-banner').owlCarousel({
+                items:4,
+                margin:10,
+                nav:true,
+                autoplay:true,
+                loop:true
+            })
+            $('.vid-banner').owlCarousel({
+                items:3,
+                margin:10,
+                nav:true,
+                autoplay:true,
+                loop:true
+            })
+        })
+    </script>
+</body>
+</html>
